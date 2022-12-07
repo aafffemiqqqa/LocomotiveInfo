@@ -1,0 +1,101 @@
+﻿<Window x:Class="LocomotiveInfo.Windows.SearchWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LocomotiveInfo.Windows"
+        mc:Ignorable="d"
+        Title="SearchWindow" Height="300" Width="600">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+
+        <ComboBox x:Name="cmbData"
+            Grid.Row="0"
+            Grid.RowSpan="2"
+            Grid.Column="0"
+            Grid.ColumnSpan="2"
+            Width="80"
+            >
+        </ComboBox>
+
+        <ComboBox x:Name="cmbLoc"
+            Grid.Row="0"
+            Grid.RowSpan="2"
+            Grid.Column="0"
+            Grid.ColumnSpan="4"
+            Width="80"
+            >
+        </ComboBox>
+
+        <ComboBox x:Name="cmbPeriod"
+            Grid.Row="0"
+            Grid.RowSpan="2"
+            Grid.Column="0"
+            Grid.ColumnSpan="6"
+            Width="80"
+            >
+        </ComboBox>
+
+        <ComboBox x:Name="cmbRegion"
+            Grid.Row="0"
+            Grid.RowSpan="2"
+            Grid.Column="2"
+            Grid.ColumnSpan="4"
+            Width="80"
+            >
+        </ComboBox>
+
+        <ComboBox x:Name="cmbSLD"
+            Grid.Row="0"
+            Grid.RowSpan="2"
+            Grid.Column="3"
+            Grid.ColumnSpan="4"
+            Width="80"
+            >
+        </ComboBox>
+
+        <Button x:Name="btnSearch"
+            Grid.Row="0"
+            Grid.RowSpan="2"
+            Grid.Column="5"
+            Grid.ColumnSpan="2"
+            Width="80"
+            Height="28"
+            Background="Red"
+            Foreground="White"
+            Content="Поиск"
+            >
+        </Button>
+
+        <DatePicker x:Name="dp1"
+            Grid.Row="1"
+            Grid.Column="2"
+            Grid.ColumnSpan="2"
+            Width="80"
+            IsEnabled="False"
+            >
+        </DatePicker>
+
+        <DatePicker x:Name="dp2"
+            Grid.Row="1"
+            Grid.Column="2"
+            Grid.ColumnSpan="4"
+            Width="80"
+            IsEnabled="False"
+            >
+        </DatePicker>
+    </Grid>
+</Window>

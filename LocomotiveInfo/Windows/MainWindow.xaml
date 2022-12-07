@@ -1,0 +1,93 @@
+﻿<Window x:Class="LocomotiveInfo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LocomotiveInfo"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="700" Width="1200"
+        ResizeMode="NoResize" WindowStartupLocation="CenterScreen"
+        >
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25*"/>
+            <RowDefinition Height="24*"/>
+            <RowDefinition Height="49*"/>
+            <RowDefinition Height="49*"/>
+            <RowDefinition Height="49*"/>
+            <RowDefinition Height="49*"/>
+            <RowDefinition Height="49*"/>
+            <RowDefinition Height="49*"/>
+        </Grid.RowDefinitions>
+
+        <ListView x:Name="lvEdging"
+            Grid.Row="1"
+            Grid.RowSpan="6"
+            Grid.Column="0"
+            Grid.ColumnSpan="7" 
+            Width="1170"
+            >
+        </ListView>
+
+        <Button x:Name="btnGraph"
+            Background="White"
+            Height="35"
+            Width="100"
+            Content="Графики"
+            Foreground="Red" 
+            Grid.Row="7"
+            Grid.Column="2"
+            />
+
+        <Button x:Name="btnHistory"
+            Background="White"
+            Height="35"
+            Width="145"
+            Content="Ист. локомотива"
+            Foreground="Red"
+            Grid.Row="7"
+            Grid.Column="3"
+            Click="btnHistory_Click"            
+            />
+
+        <Button x:Name="btnSearch"
+            Background="White"
+            Height="35"
+            Width="100"
+            Content="Поиск"
+            Foreground="Red"
+            Grid.Row="7"
+            Grid.Column="4" Click="btnSearch_Click"
+            />
+
+        <Button x:Name="btnInsert"
+            Background="White"
+            Height="35"
+            Width="155"
+            Content="Добавить данные"
+            Foreground="Red"
+            Grid.Row="7"
+            Grid.Column="6"
+            />
+
+        <Button x:Name="btnRefresh"
+            Background="White"
+            Height="35"
+            Width="100"
+            Content="Обновить"
+            Foreground="Red"
+            Grid.Row="0"
+            Grid.Column="6"
+            />
+    </Grid>
+</Window>
